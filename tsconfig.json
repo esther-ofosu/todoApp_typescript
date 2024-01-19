@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outFile": "./js/todo.js"
+    }
+}

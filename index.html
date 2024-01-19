@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"> 
+    <link rel="stylesheet" href="css/dark-theme.css" id="theme-style">
+    
+    <title>Todo app</title>
+</head>
+<body background="" class="dark-theme" data-theme="dark">
+    <div class="upper-half">
+        <div class="main-container">
+            <div class="big-container">
+            <div class="todo-bar">
+                <h1>TODO</h1>
+                <button id="theme-toggle" onclick="toggleTheme()"><img id="theme-toggle-icon" src="images/icon-sun.svg" alt="sun icon">
+                </button>
+        
+            </div>
+            
+            <form action="" id="todo-form">
+                <input type="checkbox" class="form-checkbox" id="form-checkbox">
+                <input type="text" placeholder="Create a new todo" class="textbox" id="new-todo-input">
+            </form>
+            <div class="space"></div>
+            </div>
+            
+            <div class="container">
+                <ul class="list" id="todo-list">
+                </ul> 
+                <ul id="second-ul"> 
+                    <li class="last-li">
+                    <button id="items-left">items left</button>
+                        <div id="inner-button"> 
+                            <button id="all" class="filter-button" data-filter="all">All</button>
+                            <button class="filter-button" data-filter="active">Active</button>
+                            <button class="filter-button" data-filter="completed">Completed</button>
+                        </div>
+                            <button id="clear-completed">Clear Completed</button>
+                    </li>
+
+                    <li id="lower-div">
+                        <button id="all-2" class="filter-button" data-filter="all">All</button>
+                        <button id="active" class="filter-button" data-filter="active">Active</button>
+                        <button id="completed" class="filter-button" data-filter="completed">Completed</button>
+                    </li>
+                    <div class="footer">
+                        <p>Drag and drop to reorder</p>
+                    </div>
+                    <div class="space"></div>
+                </ul>
+            
+            </div>
+        </div> 
+    </div>
+
+<script src="js/'todo.js"></script>
+</body>
+</html>
